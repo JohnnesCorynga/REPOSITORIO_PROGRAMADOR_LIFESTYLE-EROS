@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Alunos</title>
+</head>
+<body>
+    <script>
+    //JEITO DO PROFESSOR
+    /*
+        alert('Digite as notas dos 5 alunos, entre 1 e 20!')
+        let notas = new Array();
+        let saida='', soma_notas=0, media_notas=0, cont_alunos=0;
+        for(let i=0; i<5;i++){
+            notas[i]=Number(prompt("Digite a nota do "+(i+1)+"º Aluno(a)"))
+            soma_notas+= notas[i];
+        }
+        media_notas=soma_notas/5;
+        for(let j = 0;j<5;j++){
+         saida += ("Nota do "+(j+1)+"º Aluno: "+notas[j]+ "</br>");
+            if (notas[j]>=media_notas){
+                cont_alunos++;
+            }
+        }
+        document.write(saida);
+        document.write("A média da turma é "+ media_notas);
+        document.write("</br>"+cont_alunos+" Alunos tem notas acima da média")
+        */
+       
+
+        // MEU JEITO 
+        alert('Digite as notas dos 5 alunos, entre 1 e 20!')
+        let notas = new Array();
+        let cont_alunos=0;
+        for(let i=0; i<5;i++){
+            notas[i]=Number(prompt("Digite a nota do "+(i+1)+"º Aluno(a)"))
+          parseFloat
+        }
+
+        media_notas=(notas[0]+notas[1]+notas[2]+notas[3]+notas[4])/5;
+        for(let j = 0;j<5;j++){
+         document.write("Nota do "+(j+1)+"º Aluno: "+notas[j]+ "</br>");
+            if (notas[j]>=media_notas){
+                cont_alunos++;
+            }
+        }
+
+        document.write("A média da turma é "+ media_notas);
+        document.write("</br>"+cont_alunos+" Alunos tem notas acima da média");
+        
+
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

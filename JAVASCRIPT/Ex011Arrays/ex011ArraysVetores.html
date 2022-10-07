@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Arrays - Vetores</title>
+</head>
+<body>
+    <script>
+        const carros = new Array();
+        carros[0] = "Fusca";
+        carros[1] = "Ferrari";
+        carros[10] = "Mercedes";
+        carros.push("BMW");
+        carros[5] = "Volvo";
+        carros.push("Fiat");
+        carros.sort()
+        console.log(carros)
+        console.log("O carro na posição 4 é "+ carros[4])
+        console.log("Ao todo temos "+carros.length+" carros")
+
+        const nomes = Array("Eros", "Jehnnifer");
+        nomes.push("Pedro","Alessandro")
+        console.log(nomes[0]+carros[0])
+        console.log(nomes[3]+carros[4])
+    </script>
+</body>
+</html>

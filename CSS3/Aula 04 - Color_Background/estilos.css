@@ -1,0 +1,28 @@
+body {
+    background-image: url("imgs/dev.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: 250px;
+    padding: 200px;
+    float: left;
+}
+.meuExemplo{
+    margin: 10px 20px 30px 50px ;
+    padding: 10px 20px 30px 40px;
+    
+}
+p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: justify;
+    color: black; 
+    width: 70%;   
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}

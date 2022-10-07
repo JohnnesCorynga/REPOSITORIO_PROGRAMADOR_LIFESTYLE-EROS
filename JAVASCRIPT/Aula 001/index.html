@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Minha data java script</h2>
+    <button onclick="clicou()" >Click aqui para verificar a Hora</button>
+    <p id="demo"></p>
+
+
+    <script>
+        const res = document.getElementById('demo')
+        
+        function clicou(){
+            for(let i = 1 ; i<=1; i++){
+                res.innerHTML += Date() + "<br>"+"</br>"
+                }
+            
+        }
+
+
+    </script>
+</body>
+</html>

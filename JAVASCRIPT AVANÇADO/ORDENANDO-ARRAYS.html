@@ -1,0 +1,98 @@
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ordenando Arrays de Objetos</title>
+        </head>
+        <body>
+            <h1>Ordenando Arrays de Objetos</h1>
+            <pre>
+                //ORDENANDO POR =>NOME<= NA ORDEM CRESCENTE
+                let pessoaOrdenadaNome = pessoa.sort(function(a,b){
+                    if(a.nome < b.nome){
+                        return -1;
+                    }else{
+                        return true;
+                    }
+                });
+            </pre>
+        </body>
+        </html>
+        <body>
+            <script>
+                const pessoa = [{
+                    nome:"Eros Ravier",
+                    idade:23,
+                    altura:1.85,
+                    peso: 60,
+                    profissao:"Programador",
+                    estado:"Pi"
+                },
+                {
+                    nome:"Cedro",
+                    idade:27,
+                    altura:1.75,
+                    peso: 55,
+                    profissao:"Professor",
+                    estado:"Am"
+                },
+                {
+                    nome:"Bros Aragão",
+                    idade:25,
+                    altura:1.89,
+                    peso: 65,
+                    profissao:"Programador Sênior",
+                    estado:"Ce"
+                },
+                {
+                    nome:"Davier Silva",
+                    idade:24,
+                    altura:1.90,
+                    peso: 85,
+                    profissao:"Programador Seo",
+                    estado:"Rj"
+                },
+                {
+                    nome:"AragonTech",
+                    idade:66,
+                    altura:2.0,
+                    peso: 75,
+                    profissao:"LaTech",
+                    estado:"Rj"
+                }
+                ];
+                let pessoaTamanho = pessoa.length
+                //ORDENANDO POR =>NOME<= NA ORDEM CRESCENTE
+                let pessoaOrdenadaNome = pessoa.sort(function(a,b){
+                    if(a.nome < b.nome){
+                        return -1;
+                    }else{
+                        return true;
+                    }
+                });
+                //ORDENANDO POR =>IDADE<= NA ORDEM CRESCENTE
+                let pessoaOrdenadaIdade = pessoa.sort(function(c,d){
+                    if(c.idade<d.idade){
+                        return-1;
+                    }else{
+                        return true;
+                    }
+                }); 
+                
+                //ORDENANDO POR =>PESO<= NA ORDEM CRESCENTE
+                let pessoaOrdenadaPeso= pessoa.sort(function(e,f){
+                    if(e.peso<f.peso){
+                        return-1;
+                    }else{
+                        return true;
+                    }
+                });
+
+                //console.log(pessoaOrdenadaNome)
+                console.log(pessoaOrdenadaIdade);
+                //console.log(pessoaOrdenadaPeso);
+
+            </script>
+        </body>

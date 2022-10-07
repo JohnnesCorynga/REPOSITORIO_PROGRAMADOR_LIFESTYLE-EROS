@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHANDO FUNÇÕES</title>
+    
+</head>
+<body>
+    <p class="demo">1º Conteúdo q será trocado após o click</p>
+    <div class="botao1">
+        <input type="button" value="Click aqui para trocar o texto do paragrafo" onclick="minhafuncao()">
+    </div>
+    <script>
+        function minhafuncao(){
+            document.querySelector('.demo').innerHTML = "Esse Será o novo conteúdo exposto pelo js"
+            document.querySelector('.botao1').innerHTML= ""
+
+        }
+    </script>
+</body>
+</html>

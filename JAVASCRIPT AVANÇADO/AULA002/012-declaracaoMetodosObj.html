@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Declaração de métodos em objetos</title>
+</head>
+<body>
+    <h2> Declaração de métodos em objetos</h2>
+
+<script>
+    const pessoa = {
+        nome:"Eros Ravier",
+        sobrenome:"Silva Aragão",
+        idade:23,
+        altura:1.85,
+        
+        profissao:"Programador",
+        estado:"Pi",
+        nomeCompleto: function(){// Criando um metodo para o objeto
+            return this.nome + " " + this.sobrenome;
+        },
+        anoNascimento: function(){
+            return 2022 - this.idade
+        }
+    };
+    console.log(pessoa);
+    document.write(`${pessoa.nomeCompleto()} você agora faz parte do time, parabéns. Aos ${pessoa.idade} anos, tem ${pessoa.altura}, ${pessoa.profissao}, mora no ${pessoa.estado}, nasceu no ano de ${pessoa.anoNascimento()}`);
+
+</script>
+</body>
+</html>

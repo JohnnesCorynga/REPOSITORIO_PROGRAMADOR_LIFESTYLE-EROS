@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparando Arrays com Objetos</title>
+</head>
+<body>
+    <h2>Comparando Array com Objetos</h2>
+    <script>
+        //Declaração de Objeto dentro de um Array
+        const dadosPessoa = [
+            {
+                nome:"Eros",
+                proficao : "Programador Jr",
+                idade: 28,
+                salario: 26000
+            },
+            {
+                nome:"Johnnes",
+                proficao : "Programador Web",
+                idade: 27,
+                salario: 125000
+            },
+            {
+                nome:"Ravier",
+                proficao : "Programador Sr",
+                idade: 30,
+                salario: 155000
+            }
+
+    ]
+    console.log(dadosPessoa)
+    console.log(dadosPessoa[0].nome)
+    console.log(dadosPessoa[2].nome)
+    console.log(dadosPessoa[1].proficao)
+            // ACESSANDO AS INFORMAÇÕES DE UM OBJETO DENTRO DE UM ARRAY
+    dadosPessoa.forEach(indice => {
+        document.write(`${indice.nome} tem ${indice.idade}</br>`)
+    });
+
+        
+    </script>
+</body>
+</html>

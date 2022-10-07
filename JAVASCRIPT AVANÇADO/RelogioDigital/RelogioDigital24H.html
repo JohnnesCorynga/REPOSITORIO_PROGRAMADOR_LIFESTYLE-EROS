@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digtal 24H</title>
+    <style>
+        @font-face{
+    font-family: 'Digital';
+    src: url('01_Digitall.ttf') format('truetype');
+}
+        body{
+            font-size: 25px;
+            text-align: center;
+            color: red;
+        }
+        main{
+            border: solid 3px red;
+            margin: auto;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: black;
+            max-width: 400px;
+            min-height: 200px;
+            color: red;
+            font-family: 'Digital';
+        }
+        
+        footer{
+            font: italic 15px arial;
+
+        }
+    </style>
+</head>
+    
+<body >
+    <h2>Relógio Digtal 24H</h2>
+    <main>
+        <h1 id="resHora"></h1>
+        <div ></div>
+        <div id="resData"></div>
+        
+    </main>
+    <footer>&copy;2022 by ravier_eros_ofc</footer>
+
+    <script>
+        
+        setInterval(exibirHoraAtual)//Recarrega a página a cada 1000 milisegundos
+        var resHora = document.querySelector("#resHora");
+        var resData = document.querySelector("#resData");
+        function exibirHoraAtual(){
+            
+
+            let dataAtual = new Date();
+            let hora = String(dataAtual.getHours()).padStart(2,'0');
+            let minuto = String(dataAtual.getMinutes()).padStart(2,'0');
+            let segundo = String(dataAtual.getSeconds()).padStart(2,'0');
+            let hora24 = `${hora}:${minuto}:${segundo}`
+            resHora.innerHTML = hora24;
+            let diaSemanaEscrito;
+            let diaSemana = dataAtual.getDay()
+            switch (diaSemana) {
+                case 0 : diaSemanaEscrito = "Domingo"; break;
+                case 1 : diaSemanaEscrito = "Segunda-Feira"; break;
+                case 2 : diaSemanaEscrito = "Terça-Feira"; break;
+                case 3 : diaSemanaEscrito = "Quarta-Feira"; break;
+                case 4 : diaSemanaEscrito = "Quinta-Feira"; break;
+                case 5 : diaSemanaEscrito = "Sexta-Feira"; break;
+                case 6 : diaSemanaEscrito = "Sábado"; break;
+                default:console.log('[ERRO] Dia inválido');break;
+            }
+            let dia = String(dataAtual.getDate()).padStart(2,'0');
+            let mes = String(dataAtual.getMonth()+1).padStart(2,'0');
+            let ano = dataAtual.getFullYear();
+            let dataCompleta = `${diaSemanaEscrito}, ${ano}-${mes}-${dia}`
+            resData.innerHTML = dataCompleta;
+            if(hora>=18||hora<5){
+                document.querySelector("body").style.background = "rgb(44, 43, 43)"
+            }else{
+                document.querySelector("body").style.background = "yellow"
+            }
+    }
+    </script>
+</body>
+</html>

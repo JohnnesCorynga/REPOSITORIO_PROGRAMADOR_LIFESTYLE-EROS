@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Programa de aumento de salário</h1>
+    <p>Elabore um programa que recebe o nome, salário, data de empregoe e idade de um colaborador. O programa deverá calcular a quantidade de anos que a pessoa é funcionária da empresa e seu novo salário considerando que para quem tem mais de 10 anos de casa e idade for maior que 45 anos, tem uma bonificação de 12%.</p>
+    
+    <script>
+        const dataAtual = new Date();
+        const anoAtual = dataAtual.getFullYear();
+        const dados = {
+            nome:"Eros Ravier",
+            salario:10000,
+            idade:45,
+            dataIngresso:"12/12/2011",
+            tempoEmprego: function(){ // Método que pega o tempo de emprego
+                let anoEmprego = this.dataIngresso.slice(6,10) 
+                return anoAtual-anoEmprego 
+            },
+            novoSalario: function(){
+                let tempo = this.tempoEmprego();
+                if(tempo>=10&&this.idade>=45){
+                    return this.salario*1.12;
+                }else{
+                    return this.salario;
+                }
+            }
+        };
+            
+        
+        document.write(`</br>Olá, ${dados.nome}, seu sálario é ${dados.salario}, você tem ${dados.idade} anos, e ingressou na empresa em ${Number(dados.dataIngresso.slice(6,10))}.`)
+            document.write(`</br>Você é funcionário da Empresa a ${dados.tempoEmprego()} anos.`)
+            document.write(`</br>Seu novo salário será ${dados.novoSalario().toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})}`)
+            
+</script>
+</body>
+</html>

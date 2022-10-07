@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let carros,frutas, trocador= new Array();
+        carros = ["Corsa","Vectra","Fiat","Golf","Gol","Lang-Houver","Palio","Celta"];
+        frutas = ["Maçã","Banana","Pêra","Uva","Abacate","Maracujá","Laranja","Limão"]
+
+        document.write("Valores Antes da troca: ")
+        document.write(`<br>Array CARROS : ${carros}`)
+        document.write(`<br>Array FRUTAS : ${frutas}`)
+            /*Minha forma de fazer 
+        trocador=carros;
+        carros=frutas;
+        frutas=trocador;
+        */
+        /*Como professor fez*/
+        for(let i =0;i<=8;i++){
+            trocador[i]=carros[i];
+            carros[i]=frutas[i];
+            frutas[i]=trocador[i];
+        }        
+
+        document.write("<br><br>Valores Depois da troca: ")
+        document.write(`<br>Array CARROS : ${carros}`)
+        document.write(`<br>Array FRUTAS : ${frutas}`)
+
+   </script> 
+</body>
+</html>

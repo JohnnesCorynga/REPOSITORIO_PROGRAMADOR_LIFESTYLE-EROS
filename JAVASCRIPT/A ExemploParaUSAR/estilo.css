@@ -1,0 +1,20 @@
+body{
+background-color: rgb(161, 89, 67);
+font: normal 25px arial;
+color: aliceblue;
+}
+.principal{
+    
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 15px 10px 15px ;
+    background-image: url(fundoAzul.png);
+    width: 450px;
+    height: 650px;
+}
+h3 {
+    text-shadow: -3px 0 black, 
+                  0 3px black, 
+                  3px 0 black, 
+                  0 -1px black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>Métodos de manipulação de datas do JavaScript</h1>
+
+
+
+    <script>
+        //Escrever na tela a data no formato dd/mm/yyyy
+        // usando .padStart(2,"0") completa com o zero antes 
+
+        //criar um contrutor do objeto Date()
+        const dataAtual = new Date();
+        console.log(dataAtual)
+        //pegar o dia da data
+        let dia = dataAtual.getDate();
+        console.log(+ dia)
+        //pegando o mês da data com o zero antes do número
+        let diaComZero = String(dataAtual.getDate()).padStart(2,'0');
+        console.log(diaComZero);
+        //pegar o mês da data
+        let mes = dataAtual.getMonth()+1;
+        console.log(mes);
+        //pegando o mês da data com o zero antes do número
+        let mesComZero = String(dataAtual.getMonth()+1).padStart(2,'0');
+        console.log(mesComZero);
+        //pegar o ano da data
+        let ano = dataAtual.getFullYear();
+        console.log(ano)
+        console.log(dia+"/"+mes+"/"+ano);
+        let data = ano+"/"+mesComZero+"/"+diaComZero; 
+        
+        //pegar hora
+        let hora = String(dataAtual.getHours()).padStart(2,"0")
+        console.log(hora)
+        //pegar hora
+        let minutos = String(dataAtual.getMinutes()).padStart(2,"0")
+        console.log(minutos)
+        //pegar hora
+        let segundos = String(dataAtual.getSeconds()).padStart(2,"0")
+        console.log(segundos)
+        let horas = hora+":"+minutos+":"+segundos;
+        document.write(`${data} - ${horas}`)
+    </script>
+</body>
+</html>

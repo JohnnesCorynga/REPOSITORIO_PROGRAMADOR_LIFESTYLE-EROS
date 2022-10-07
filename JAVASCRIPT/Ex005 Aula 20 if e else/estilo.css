@@ -1,0 +1,26 @@
+body{
+background-color: rgb(161, 89, 67);
+font: normal 25px 'time new romam';
+color: aliceblue;
+}
+.principal{
+    border-radius: 15px;
+    padding: 5px 15px 10px 15px ;
+    background-image: url(fundoAzul.png);
+    width: 550px;
+}
+#segunda{
+    text-align: left;
+}
+input{
+    float: right;
+}
+h3 {
+    text-shadow: -3px 0 black, 
+                  0 3px black, 
+                  3px 0 black, 
+                  0 -1px black;
+}
+table{
+    border: rgb(245, 237, 3);
+}

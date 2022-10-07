@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS EXERCÍCIOS</title>
+</head>
+<body style="font-size: 30px;">
+    <h2>Trocando Valores de Arrays</h2>
+    <input type="button" onclick="trocando()" value="Click Aqui">
+    <div class="trocar">Olá, Mundo!</div>
+
+    <script>
+    let carros,frutas, trocador= new Array();
+    let trocar1 = window.document.querySelector('.trocar')
+        function trocando(){
+            
+            carros = ["Corsa","Vectra","Fiat","Golf","Gol","Strada","Palio","Celta"];
+            frutas = ["Maçã", "Banana", "Pêra", "Uva", "Abacate", "Maracujá", "Laranja", "Limão"]
+            trocar1.innerHTML += `</br>Estes são os parâmentros da Array carros: ${carros}. Com ${carros.length} modelos.`
+            trocar1.innerHTML += `</br>Estes são os parâmentros da Array frutas: ${frutas}. Com ${frutas.length} tipos.`
+            
+            trocador=carros;
+            carros=frutas;
+            frutas=trocador;
+            trocar1.innerHTML += `</br>Estes são os <strong>NOVOS</strong> parâmentros da Array carros: ${carros}`
+            trocar1.innerHTML += `</br>Estes são os <strong>NOVOS</strong> parâmentros da Array frutas: ${frutas}`
+        }
+    </script>
+</body>
+</html>

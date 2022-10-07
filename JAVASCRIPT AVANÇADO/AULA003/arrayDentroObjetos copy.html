@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparando Arrays com Objetos</title>
+</head>
+<body>
+    <h2>Comparando Array com Objetos</h2>
+    <script>
+        //Declaração de um Array dentor de um objeto
+        const dadosPessoa = {
+            nome: ["Eros","Ravier","Silva", "Aragão"],
+            proficao : ["Programador Jr","Programador Web","Programador Pleno","Programador Sr","Programdor SEO"],
+            idade: [23,25,20,45],
+            salario: [12500,34000,65500,23000,8500]
+
+        }
+    dadosPessoa.nome.push("Johnnes")
+       console.log(`O ${dadosPessoa.proficao[2]}, ${dadosPessoa.nome[4]} aos ${dadosPessoa.idade[1]} anos, está com o salário de ${dadosPessoa.salario[3].toLocaleString("pt-br", {style: "currency", currency: "BRL"})}`)
+        
+    </script>
+</body>
+</html>

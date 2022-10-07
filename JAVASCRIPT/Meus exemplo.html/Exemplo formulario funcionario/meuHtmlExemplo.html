@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo linha</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+ <center>
+  <div class="principal">
+      <center>
+        <h3>Minha Página</h3>
+        <h4>Inserindo linha com nomes</h4>
+      </center>
+        <div>
+          <label for="">Nº Matricula: </label>
+          <input type="number" id="matricula1"><br>
+          <label for="">Nome Funcionário: </label>
+          <input type="text" id="nome1"><br>
+          <label for="">Função: </label>
+          <input type="text" id="funcao1"><br>
+          <label for="">Salário: </label>
+          <input type="number" id="salario1"><br>
+          <input type="button" value="Adicionar" onclick="adicionar()">
+        </div><br>
+        <div id="tabelaResultado">
+          <table border="1" style="width:50%;" id="resTabela1">
+              <tr>
+                <th>Nº Matricula</th>
+                <th>Nomes</th>
+                <th>Função</th>
+                <th>Salário</th>
+              </tr>
+              
+
+          </table>
+          <button id="mostrar" onclick="mostrar()">Mostrar Dados</button>
+          <br> Dados Já Salvos: 
+              <div id="resFinal" class="hidden"></div>
+  
+        </div>
+  
+      
+
+
+
+  </div></center>
+ 
+ <center><p style="color: rgb(3, 3, 3); font: italic 25px time new romam ">&copy;ravier_eros_ofc</p></center>
+  <script src="meuDoc.js"></script>  
+</body>
+</html>

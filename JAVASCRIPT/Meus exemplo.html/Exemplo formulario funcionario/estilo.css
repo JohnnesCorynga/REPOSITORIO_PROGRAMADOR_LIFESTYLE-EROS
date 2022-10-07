@@ -1,0 +1,46 @@
+body{
+background-color: rgb(161, 89, 67);
+font: normal 25px arial;
+color: aliceblue;
+}
+.principal{
+    
+    border-radius: 15px;
+    text-align: left;
+    padding: 5px 15px 10px 15px ;
+    background-image: url(fundoAzul.png);
+    width: 600px;
+}
+h3 {
+    text-shadow: -3px 0 black, 
+                  0 3px black, 
+                  3px 0 black, 
+                  0 -1px black;
+}
+#tabelaResultado{
+    font: normal 15px 'time new romam';
+}
+.hidden{
+    display: none;
+}
+button{
+    border-bottom: black;
+    float: right;
+    text-shadow: -0px 0 black, 
+    0 -1px black, 
+    1px 0 black, 
+    0 -1px black;
+    box-shadow: 2px 2px rgb(0,0,0,1);
+    cursor: pointer;
+    color: rgb(1, 114, 31);
+    border-radius: 12px;
+}
+button:active{
+    color: rgb(243, 35, 3);
+}
+input{
+    float: right;
+}
+
+
+
